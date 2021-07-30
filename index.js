@@ -12,7 +12,7 @@ app.use(
 );
 
 app.get('/', (req, res) => {
-  res.json({'message': 'ok'});
+   (require('./main/md.js'))(req,res);
 })
 
 app.use('/programming-languages', programmingLanguagesRouter);
